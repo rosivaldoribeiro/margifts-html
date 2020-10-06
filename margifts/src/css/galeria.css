@@ -1,0 +1,77 @@
+:root {
+  --main-bg-color: #2EB2B9;
+  --main-bg-color-transparent: rgb(46,178,185,0.8); 
+  --main-bg-color-dark: #207B80;
+  --main-text-color-light: #ffffff;
+  --secondary-text-color-light: #A8A8A8;
+  --main-text-color-dark: #212529;
+  --main-txt-color: blue;
+  --main-padding: 15px;
+  --primary: #2EB2B9;
+}
+
+.container {
+    position: relative;
+  }
+  .img-slide{
+    width: 100%;
+  }
+  .mySlides {
+    display: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: var(--main-bg-color-transparent);
+  }
+  
+  .numbertext {
+    color: var(--main-text-color-dark);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }

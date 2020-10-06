@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==========BOOTSTRAP==========-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--========== MAIN CSS ==========-->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!--========== FONT AWESOME ==========-->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!--========== FONTS ==========-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+
+    <!--========== ANIMATE.CSS ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <title>MARgifts</title>
+</head>
+
+<body>
+    <!--==========  HEADER    =========-->
+
+    <header class="fixed-top">
+        <a href="">
+            <div class="row align-items-center">
+                <div class="preview-header col-md-12">
+                    <p class="text-center p-0 m-0">
+                        Cupon de <strong>10%</strong> para novos clientes
+
+                    </p>
+                </div>
+            </div>
+        </a>
+        <div class=" header-search">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-12">
+                        <a href="index.html">
+                            <h1 class="logomarca logomarca-header text-lg-left text-center">
+                                <img src="src/img/brand/logo-horizontal2.png" alt="">
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="input-group input-group-sm mb-3">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Nome do produto">
+                            <div class="input-group-append">
+                                <button class="button-search btn button-icon-search" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="button-search-header btn" type="button">
+                                    Pesquisar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-lg-0 p-2 m-1 m-md-0">
+                        <div class="icon-main-header row justify-content-lg-end justify-content-center">
+                            <div>
+                                <a href="" type="button" class="btn btn-outline-primary"><i class="far fa-user"></i></a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <span>
+                                        <a href="" type="button" class="btn btn-outline-primary"><i class="fas fa-notes-medical"></i></a>
+                                    </span>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="carrinho.html">
+                                    <span>
+                                        <div class="alert-shop">
+                                            <span>1</span>
+                                        </div>
+                                        <a href="" type="button" class="btn btn-outline-primary"><i class="fas fa-shopping-cart"></i></a>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-header d-flex justify-content-md-center">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>Menu</span>
+                    <span><i class="fas fa-bars"></i></span>
+                    <!--
+                        <span class="navbar-toggler-icon"></span>
+                    -->
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="list-navbar-header navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">temporada</a>
+                            <div class="menu-option dropdown-menu">
+                                <a class="dropdown-item" href="#">Verão</a>
+                                <a class="dropdown-item" href="#">Primavera</a>
+                                <a class="dropdown-item" href="#">Outono</a>
+                                <a class="dropdown-item" href="#">Inverno</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Todas as temporadas</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">empresarial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">escolar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">casa</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="margin-top-header-fixed">
+        <section class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="breadcrumb-header col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Categorias</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="filters-product">
+                    <ul class="list-group">
+                        <h5>CATEGORIAS</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a class="active" href="">Sacos & Viagem </a>
+                            <span class="badge badge-pill">20</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Escrita</a>
+                            <span class="badge badge-pill">24</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Escritório & Congressos</a>
+                            <span class="badge  badge-pill">17</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Tecnología</a>
+                            <span class="badge badge-pill">23</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Pessoal</a>
+                            <span class="badge badge-pill">52</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Porta-chaves e Isqueiros</a>
+                            <span class="badge badge-pill">7</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Casa e Horeca</a>
+                            <span class="badge badge-pill">62</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Bonés & Chapéus</a>
+                            <span class="badge badge-pill">18</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Verão, Outdook e Eventos</a>
+                            <span class="badge badge-pill">27</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Infaltil</a>
+                            <span class="badge badge-pill">31</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Inverno</a>
+                            <span class="badge badge-pill">31</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Ferramentos & Auto</a>
+                            <span class="badge badge-pill">16</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a href="">Sacos e Viagem</a>
+                            <span class="badge badge-pill">20</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-9 col-md-8">
+                <div class="row justify-content-end">
+                    <div class="col">
+
+                        <div class="">
+                            <div class="m-2 form-group-sm row justify-content-lg-end align-items-center">
+                                <label class="col-sm-auto" for="exampleFormControlSelect1">Ordenar por:</label>
+                                <select class="form-control col-lg-2 col-md-3" id="exampleFormControlSelect1">
+                                    <option>Mais barato</option>
+                                    <option>Menos barato</option>
+                                    <option>Mais recente</option>
+                                    <option>Menos recente</option>
+                                </select>
+
+                                <label class="col-sm-auto" for="exampleFormControlSelect2">Ver</label>
+                                <select class="form-control col-lg-2 col-md-3" id="exampleFormControlSelect2">
+                                    <option>24</option>
+                                    <option>48</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-3 col-6 mb-5">
+                                <div class="product-img-description row">
+                                    <div class="col-lg-12">
+                                        <div class="img-produto">
+                                            <img src="src/img/produtos/bone/6.jpg" alt="">
+                                            <div class="labels-product">
+                                                <div class="label-product-new d-inline-flex">
+                                                    novo
+                                                </div>
+                                            </div>
+                                            <div class="labels-product-lb-new">
+                                                <div class="label-product-dicount d-inline-flex">
+                                                    15%
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product" href="detalheProduto.html">
+                                                <div class="img-produto">
+                                                    <img id="photoProduct" src="src/img/produtos/escrita/bed6797-131499_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product">
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-heart"" style="font-size: px;"></i></a>
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-eye"" style="font-size: px;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 description-product-card">
+                                        <div class="column">
+                                            <br>
+                                            <h6 class="col-10">
+                                                <a href="" id="categoryProduct">escrita</a>
+                                            </h6>   
+                                            <div class="row">
+                                                <h4 class="col-10">
+                                                    <a href="" id="nameProduct">
+                                                        Esferográfica Bampen
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <p id="descriptionProduct">
+                                                Kit Para Ajudar A Respirar Em Dias Secos
+                                            </p>
+                                        </div>
+                                        <div class="price-product">
+                                            <center>
+                                                <h4 class="price-discount-product" id="priceProduct">0.86</h4>
+                                                <h4 class="discount" id="priceProduct" style="font-size: 28px;">0.35</h4></center>
+                                        </div>
+                                        <br>
+                                        <center>
+                                            <button type="button" class="btn btn-outline-info btn-comprar">SAIBA MAIS</button>
+                                        </center>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-5">
+                                <div class="product-img-description row">
+                                    <div class="col-lg-12">
+                                        <div class="img-produto">
+                                            <img src="src/img/produtos/bone/6.jpg" alt="">
+                                            <div class="labels-product">
+                                                <div class="label-product-new d-inline-flex">
+                                                    novo
+                                                </div>
+                                            </div>
+                                            <div class="labels-product-lb-new">
+                                                <div class="label-product-dicount d-inline-flex">
+                                                    15%
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product" href="detalheProduto.html">
+                                                <div class="img-produto">
+                                                    <img id="photoProduct" src="src/img/produtos/escrita/bed6797-131499_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product">
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-heart"" style="font-size: px;"></i></a>
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-eye"" style="font-size: px;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 description-product-card">
+                                        <div class="column">
+                                            <br>
+                                            <h6 class="col-10">
+                                                <a href="" id="categoryProduct">escrita</a>
+                                            </h6>   
+                                            <div class="row">
+                                                <h4 class="col-10">
+                                                    <a href="" id="nameProduct">
+                                                        Esferográfica Bampen
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <p id="descriptionProduct">
+                                                Kit Para Ajudar A Respirar Em Dias Secos
+                                            </p>
+                                        </div>
+                                        <div class="price-product">
+                                            <center>
+                                                <h4 class="price-discount-product" id="priceProduct">0.86</h4>
+                                                <h4 class="discount" id="priceProduct" style="font-size: 28px;">0.35</h4></center>
+                                        </div>
+                                        <br>
+                                        <center>
+                                            <button type="button" class="btn btn-outline-info btn-comprar">SAIBA MAIS</button>
+                                        </center>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-5">
+                                <div class="product-img-description row">
+                                    <div class="col-lg-12">
+                                        <div class="img-produto">
+                                            <img src="src/img/produtos/bone/6.jpg" alt="">
+                                            <div class="labels-product">
+                                                <div class="label-product-new d-inline-flex">
+                                                    novo
+                                                </div>
+                                            </div>
+                                            <div class="labels-product-lb-new">
+                                                <div class="label-product-dicount d-inline-flex">
+                                                    15%
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product" href="detalheProduto.html">
+                                                <div class="img-produto">
+                                                    <img id="photoProduct" src="src/img/produtos/escrita/bed6797-131499_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product">
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-heart"" style="font-size: px;"></i></a>
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-eye"" style="font-size: px;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 description-product-card">
+                                        <div class="column">
+                                            <br>
+                                            <h6 class="col-10">
+                                                <a href="" id="categoryProduct">escrita</a>
+                                            </h6>   
+                                            <div class="row">
+                                                <h4 class="col-10">
+                                                    <a href="" id="nameProduct">
+                                                        Esferográfica Bampen
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <p id="descriptionProduct">
+                                                Kit Para Ajudar A Respirar Em Dias Secos
+                                            </p>
+                                        </div>
+                                        <div class="price-product">
+                                            <center>
+                                                <h4 class="price-discount-product" id="priceProduct">0.86</h4>
+                                                <h4 class="discount" id="priceProduct" style="font-size: 28px;">0.35</h4></center>
+                                        </div>
+                                        <br>
+                                        <center>
+                                            <button type="button" class="btn btn-outline-info btn-comprar">SAIBA MAIS</button>
+                                        </center>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-5">
+                                <div class="product-img-description row">
+                                    <div class="col-lg-12">
+                                        <div class="img-produto">
+                                            <img src="src/img/produtos/bone/6.jpg" alt="">
+                                            <div class="labels-product">
+                                                <div class="label-product-new d-inline-flex">
+                                                    novo
+                                                </div>
+                                            </div>
+                                            <div class="labels-product-lb-new">
+                                                <div class="label-product-dicount d-inline-flex">
+                                                    15%
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product" href="detalheProduto.html">
+                                                <div class="img-produto">
+                                                    <img id="photoProduct" src="src/img/produtos/escrita/bed6797-131499_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product">
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-heart"" style="font-size: px;"></i></a>
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-eye"" style="font-size: px;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 description-product-card">
+                                        <div class="column">
+                                            <br>
+                                            <h6 class="col-10">
+                                                <a href="" id="categoryProduct">escrita</a>
+                                            </h6>   
+                                            <div class="row">
+                                                <h4 class="col-10">
+                                                    <a href="" id="nameProduct">
+                                                        Esferográfica Bampen
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <p id="descriptionProduct">
+                                                Kit Para Ajudar A Respirar Em Dias Secos
+                                            </p>
+                                        </div>
+                                        <div class="price-product">
+                                            <center>
+                                                <h4 class="price-discount-product" id="priceProduct">0.86</h4>
+                                                <h4 class="discount" id="priceProduct" style="font-size: 28px;">0.35</h4></center>
+                                        </div>
+                                        <br>
+                                        <center>
+                                            <button type="button" class="btn btn-outline-info btn-comprar">SAIBA MAIS</button>
+                                        </center>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-5">
+                                <div class="product-img-description row">
+                                    <div class="col-lg-12">
+                                        <div class="img-produto">
+                                            <img src="src/img/produtos/bone/6.jpg" alt="">
+                                            <div class="labels-product">
+                                                <div class="label-product-new d-inline-flex">
+                                                    novo
+                                                </div>
+                                            </div>
+                                            <div class="labels-product-lb-new">
+                                                <div class="label-product-dicount d-inline-flex">
+                                                    15%
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product" href="detalheProduto.html">
+                                                <div class="img-produto">
+                                                    <img id="photoProduct" src="src/img/produtos/escrita/bed6797-131499_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product">
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-heart"" style="font-size: px;"></i></a>
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-eye"" style="font-size: px;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 description-product-card">
+                                        <div class="column">
+                                            <br>
+                                            <h6 class="col-10">
+                                                <a href="" id="categoryProduct">escrita</a>
+                                            </h6>   
+                                            <div class="row">
+                                                <h4 class="col-10">
+                                                    <a href="" id="nameProduct">
+                                                        Esferográfica Bampen
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <p id="descriptionProduct">
+                                                Kit Para Ajudar A Respirar Em Dias Secos
+                                            </p>
+                                        </div>
+                                        <div class="price-product">
+                                            <center>
+                                                <h4 class="price-discount-product" id="priceProduct">0.86</h4>
+                                                <h4 class="discount" id="priceProduct" style="font-size: 28px;">0.35</h4></center>
+                                        </div>
+                                        <br>
+                                        <center>
+                                            <button type="button" class="btn btn-outline-info btn-comprar">SAIBA MAIS</button>
+                                        </center>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-6 mb-5">
+                                <div class="product-img-description row">
+                                    <div class="col-lg-12">
+                                        <div class="img-produto">
+                                            <img src="src/img/produtos/bone/6.jpg" alt="">
+                                            <div class="labels-product">
+                                                <div class="label-product-new d-inline-flex">
+                                                    novo
+                                                </div>
+                                            </div>
+                                            <div class="labels-product-lb-new">
+                                                <div class="label-product-dicount d-inline-flex">
+                                                    15%
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product" href="detalheProduto.html">
+                                                <div class="img-produto">
+                                                    <img id="photoProduct" src="src/img/produtos/escrita/bed6797-131499_2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="button-hover-product">
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-heart"" style="font-size: px;"></i></a>
+                                                <a href="" type="button" class="btn btn-outline-primary">
+                                                    <i class="far fa-eye"" style="font-size: px;"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 description-product-card">
+                                        <div class="column">
+                                            <br>
+                                            <h6 class="col-10">
+                                                <a href="" id="categoryProduct">escrita</a>
+                                            </h6>   
+                                            <div class="row">
+                                                <h4 class="col-10">
+                                                    <a href="" id="nameProduct">
+                                                        Esferográfica Bampen
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <p id="descriptionProduct">
+                                                Kit Para Ajudar A Respirar Em Dias Secos
+                                            </p>
+                                        </div>
+                                        <div class="price-product">
+                                            <center>
+                                                <h4 class="price-discount-product" id="priceProduct">0.86</h4>
+                                                <h4 class="discount" id="priceProduct" style="font-size: 28px;">0.35</h4></center>
+                                        </div>
+                                        <br>
+                                        <center>
+                                            <button type="button" class="btn btn-outline-info btn-comprar">SAIBA MAIS</button>
+                                        </center>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="container">
+        <div class="features-group">
+            <div class="row justify-content-around">
+                <div class="col-lg-3 col-sm-4">
+                    <div class="row text-center text-md-left mt-md-3">
+                        <div class="col-md-3">
+                            <span><i class="fas fa-shipping-fast"></i></span>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6>
+                                        ENTREGAS EM 5 DIAS
+                                    </h6>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p>Depois da confirmação do orçamento</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="row text-center text-md-left mt-md-3">
+                        <div class="col-md-3">
+                            <span>
+                                <i class="fas fa-edit"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6>
+                                        PERSONALIZAÇÃO
+                                    </h6>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p>Economicos e de prestigio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="row text-center text-md-left mt-md-3">
+                        <div class="col-md-3">
+                            <span>
+                                <i class="fas fa-user-clock"></i>
+                            </span>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h6>
+                                        SUPORTE 24/7
+                                    </h6>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p>Acompanhamento antes e depois do pedido</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==========  FOOTER    =========-->
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="contact-footer col-lg-3 col-md-6">
+                        <h6>CONTACTOS</h6>
+                        <div>
+                            <p>
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </span>
+                                <a href="https://maps.google.com/maps?ll=38.83438,-9.359966&z=16&t=m&hl=pt-PT&gl=PT&mapclient=embed&daddr=Av.%2025%20de%20Abril%20105%20Armaz%C3%A9m%206%2C%202705-902%202705-902%20Terrugem@38.8343801,-9.359966499999999"
+                                    target="_blank">
+                                    Av. 25 de Abril, 105
+                                    Armazém 6 Vila Verde
+                                    2705-902
+                                    Terrugem, Portugal</a>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span>
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                                <a href="tel:+351210105690" target="_blank">210105690</a>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <span><i class="fas fa-envelope"></i></span>
+                                <a href="mailto:geral@margifts.pt" target="_blank">geral@margifts.pt</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-footer col-lg-3 col-md-6">
+                        <h6>SOBRE NÓS</h6>
+                        <ul>
+                            <li><a href="">O que fazemos</a></li>
+                            <li>
+                                <a href="">Catálogos</a>
+                            </li>
+                            <li>
+                                <a href="">Eventos</a>
+                            </li>
+                            <li>
+                                <a href="">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="social-media-footer">
+                            <h6>REDES SOCIAIS</h6>
+                            <div>
+                                <span>
+                                    <i class="fab fa-facebook-square"></i>
+                                </span>
+                                <span>
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                                <span>
+                                    <i class="fab fa-youtube"></i>
+                                </span>
+                                <span>
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="payment-footer col-lg-3 col-md-6">
+                        <h6>PAGAMENTOS</h6>
+                            <div>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32px"
+                                        height="32px">
+                                        <path
+                                            d="M 7.5 4 C 6.1309372 4 5 5.1309372 5 6.5 L 5 7 L 5 8 L 7 8 L 7 7 L 7 6.5 C 7 6.2130628 7.2130628 6 7.5 6 L 24.5 6 C 24.786937 6 25 6.2130628 25 6.5 L 25 7 L 25 8 L 27 8 L 27 7 L 27 6.5 C 27 5.1309372 25.869063 4 24.5 4 L 7.5 4 z M 20.5 10 C 19.682937 10 19 10.682937 19 11.5 L 19 20.5 C 19 21.317063 19.682937 22 20.5 22 L 24.5 22 C 26.539442 22 28.189452 20.208742 27.982422 18.142578 C 27.866225 16.988593 27.109988 16.201403 26.179688 15.660156 C 26.665924 15.05874 27 14.326771 27 13.5 C 27 11.578812 25.421188 10 23.5 10 L 20.5 10 z M 6.6152344 10.007812 C 6.1487779 10.062743 5.6757895 10.48269 5.6015625 10.996094 L 4.1933594 20.675781 L 4.0488281 21.666016 L 6.0292969 21.953125 L 6.171875 20.964844 L 7.1132812 14.501953 L 9.2304688 20.123047 A 1.0001 1.0001 0 0 0 9.234375 20.134766 C 9.4411298 20.663722 9.9895207 21 10.5 21 C 11.010479 21 11.558866 20.663723 11.765625 20.134766 A 1.0001 1.0001 0 0 0 11.769531 20.123047 L 13.886719 14.501953 L 14.828125 20.964844 L 14.970703 21.953125 L 16.951172 21.666016 L 16.806641 20.675781 L 15.398438 10.996094 C 15.324167 10.482409 14.848222 10.061748 14.382812 10.007812 C 13.917404 9.9538775 13.355241 10.256313 13.166016 10.740234 A 1.0001 1.0001 0 0 0 13.162109 10.751953 L 10.5 17.820312 L 7.8378906 10.751953 A 1.0001 1.0001 0 0 0 7.8339844 10.742188 C 7.6461651 10.258809 7.0816908 9.9528845 6.6152344 10.007812 z M 21 12 L 23.5 12 C 24.340812 12 25 12.659188 25 13.5 C 25 14.340812 24.340812 15 23.5 15 L 23 15 L 23 17 L 23.5 17 L 24.357422 17 C 25.185809 17 25.916901 17.594108 25.992188 18.341797 C 26.085157 19.269633 25.392558 20 24.5 20 L 21 20 L 21 12 z M 4 24 L 4 25 L 4 25.5 C 4 26.869063 5.1309372 28 6.5 28 L 25.5 28 C 26.869063 28 28 26.869063 28 25.5 L 28 25 L 28 24 L 26 24 L 26 25 L 26 25.5 C 26 25.786937 25.786937 26 25.5 26 L 6.5 26 C 6.2130628 26 6 25.786937 6 25.5 L 6 25 L 6 24 L 4 24 z" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32px"
+                                        height="32px">
+                                        <path
+                                            d="M 11.4375 2 C 10.386719 2 9.503906 2.761719 9.28125 3.71875 L 9.28125 3.75 C 9.28125 3.75 3.40625 30.714844 2.25 36.09375 L 2.25 36.125 C 2.078125 36.984375 2.25 37.816406 2.75 38.34375 C 3.25 38.871094 3.882813 39 4.40625 39 L 12.96875 39 C 12.699219 40.21875 12.398438 41.558594 12.1875 42.53125 C 11.996094 43.410156 11.832031 44.125 11.71875 44.65625 C 11.605469 45.1875 11.5625 45.429688 11.53125 45.59375 C 11.449219 46.027344 11.46875 46.523438 11.8125 47.0625 C 12.15625 47.601563 12.910156 48 13.75 48 L 22.6875 48 C 23.761719 48 24.621094 47.25 24.84375 46.25 C 24.84375 46.25 25.378906 43.839844 25.90625 41.40625 C 26.167969 40.1875 26.417969 38.980469 26.625 38.03125 C 26.832031 37.082031 27 36.34375 27 36.34375 C 27.050781 36.128906 27.09375 36.035156 27.09375 36.03125 C 27.09375 36.027344 26.996094 36 27.28125 36 L 32.40625 36 C 39.789063 36 46 31.554688 47.65625 23.8125 C 48.589844 19.433594 47.472656 16.101563 45.34375 14 C 43.464844 12.144531 40.882813 11.261719 38.40625 11.0625 C 38.109375 8.089844 36.695313 5.769531 34.78125 4.28125 C 32.769531 2.71875 30.277344 2 27.90625 2 Z M 11.4375 4 L 27.90625 4 C 29.859375 4 31.957031 4.625 33.5625 5.875 C 35.027344 7.015625 36.011719 8.710938 36.3125 11 L 20.9375 11 C 20.675781 11 20.386719 10.96875 19.9375 11.09375 C 19.488281 11.21875 18.9375 11.742188 18.8125 12.28125 L 15.5625 26.90625 L 15.5625 26.96875 L 13.3125 37 L 4.40625 37 C 4.253906 37 4.179688 36.960938 4.1875 36.96875 C 4.195313 36.976563 4.15625 36.898438 4.21875 36.53125 C 4.222656 36.503906 4.210938 36.53125 4.21875 36.5 C 5.378906 31.109375 11.238281 4.238281 11.25 4.1875 L 11.25 4.15625 C 11.28125 4.054688 11.339844 4 11.4375 4 Z M 20.6875 13 C 20.773438 12.996094 20.769531 13 20.9375 13 L 36.40625 13 C 36.363281 13.652344 36.273438 14.34375 36.09375 15.1875 C 35.351563 18.664063 33.847656 21.039063 31.65625 22.625 C 29.464844 24.210938 26.519531 25 22.9375 25 L 18.53125 25 C 18.378906 25 18.191406 25.042969 18 25.0625 Z M 38.3125 13.15625 C 40.378906 13.339844 42.492188 14.011719 43.9375 15.4375 C 45.589844 17.070313 46.515625 19.523438 45.6875 23.40625 C 44.207031 30.320313 39.015625 34 32.40625 34 L 27.28125 34 C 26.535156 34 25.882813 34.332031 25.53125 34.78125 C 25.179688 35.230469 25.101563 35.707031 25.0625 35.875 C 25.015625 36.066406 24.894531 36.644531 24.6875 37.59375 C 24.480469 38.542969 24.199219 39.78125 23.9375 41 C 23.410156 43.433594 22.90625 45.8125 22.90625 45.8125 C 22.886719 45.894531 22.722656 46 22.6875 46 L 13.75 46 C 13.582031 46 13.523438 45.976563 13.5 45.96875 C 13.484375 46.046875 13.574219 45.625 13.6875 45.09375 C 13.800781 44.5625 13.964844 43.816406 14.15625 42.9375 C 14.535156 41.175781 15.03125 38.867188 15.53125 36.5625 C 16.53125 31.953125 17.53125 27.375 17.53125 27.375 C 17.578125 27.230469 17.613281 27.195313 17.78125 27.125 C 17.96875 27.046875 18.289063 27 18.53125 27 L 22.9375 27 C 26.816406 27 30.191406 26.144531 32.8125 24.25 C 35.433594 22.355469 37.238281 19.445313 38.0625 15.59375 C 38.25 14.714844 38.261719 13.945313 38.3125 13.15625 Z" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <i class="fas fa-money-check-alt"></i>
+                                </span>
+                            </div>
+                    </div>
+                </div>
+                <hr class="m-1">
+                <div class="mt-1 copyright">
+                    <p class="my-0 text-center">Website desenvolvido por superweb.pt © Todos os direitos estão
+                        reservados
+                        MARGifts -
+                        2020
+                    </p>
+
+                </div>
+            </div>
+    </footer>
+
+    <!--==========BOOTSTRAP JS=========-->
+    <script src="src/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="src/js/products.js"></script>
+
+    <script src='src/js/jquery.zoom.js'></script>
+    <script src="src/js/detalheProduto.js"></script>
+    <script src="src/js/listaDesejos.js"></script>
+
+</body>
+
+</html>
